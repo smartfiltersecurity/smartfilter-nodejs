@@ -1,8 +1,8 @@
-var key = 'key goes here';
-var whitelist = 'whitelist goes here';
-var input = 'the <script>alert("quick brown fox");</script> jumps over the lazy dog';
+var apiKey = 'api key goes here';
+var ruleKey = 'rule key goes here';
+var input = 'the <script>alert("quick brown fox");</script> jumps over the lazy dog & mouse';
 
-var smartfilter = require('../src/smartfilter.js').client({ key: key });
+var smartfilter = require('../src/smartfilter.js').client({ key: apiKey });
 
 // Verify
 smartfilter.verify(function(err, verified) {
@@ -13,7 +13,7 @@ smartfilter.verify(function(err, verified) {
       if (!err) {
         console.log('Key info:', info);
         // Filter
-        smartfilter.filter(input, whitelist, function(err, filtered) {
+        smartfilter.filter(input, ruleKey, function(err, filtered) {
           if (!err) {
             console.log('Filter:', filtered);
           }

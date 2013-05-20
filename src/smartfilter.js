@@ -2,7 +2,7 @@ var request = require('request');
 
 var SmartFilter = (function() {
   function SmartFilter(options) {
-    this.base = 'http://api.prevoty.com/1';
+    this.base = 'https://api.prevoty.com/1';
     this.key = options.key;
   }
   

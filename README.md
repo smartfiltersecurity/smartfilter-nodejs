@@ -14,7 +14,7 @@ To get started:
 
 1) Pull a copy or .zip/.tar of this repository
 
-2) Make sure you have an API key (you can get one for free from http://prevoty.com)
+2) Make sure you have an API key (you can get one for free from http://smartfiltersecurity.com)
 
 3) Edit `examples/example.js` - you will want to put in your API key and rule key
 
